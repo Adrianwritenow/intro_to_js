@@ -15,7 +15,7 @@ givenName = "Tim";
 // 3.
 // What is `givenName` set to right now?
 givenName = givenName;
-// A:givenName
+// A:Tim
 
 
 // 4.
@@ -29,13 +29,13 @@ var greeting = "Hello, how are you? " + givenName;
 var high = 50;
 var low  = 10;
 var math = high - low;
-// A:subtract the variablelow from variable high.
+// A:40
 
 
 // 6.
 // What is `math` set to?
 math = high - "5";
-// A:subtract the string "5" from the variable high.
+// A:45
 
 
 // 7.
@@ -45,7 +45,7 @@ math = high - "5";
 var born = 1984;
 var today = 2017;
 // A: var age = today - born;
-// console.log("my age is", age);
+// console.log('Tim is' +age+ 'years old.');
 
 
 // 8.
@@ -58,8 +58,8 @@ var instructorName;
 
 // 9.
 // Update the variables `yourName` and `instructorName` so the expression below reads correctly.
-// A:yourName = Adrian;
-//  instructorName = Brian;
+// A: yourName = Adrian;
+//    instructorName = Brian;
 
 
 // This statement should read correctly
@@ -139,8 +139,10 @@ var f = (NaN == NaN);
 // }
 var thirsty = true;
 
-if (thirsty = true) {  console.log("I'm parched!");
-} else {
+if (thirsty === true)//not necessary  if(thirsty) will work with boolean
+{ console.log("I'm parched!");
+} else
+{
   console.log("I've had enough to drink.");
 }
 
